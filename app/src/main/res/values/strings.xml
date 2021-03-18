@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Beers by Sergio Vargas</string>
+    <string name="lorem_str">Cras purus diam, molestie sed arcu at, blandit accumsan lectus. Morbi sed vestibulum sem, quis venenatis sem. Nulla cursus lectus nec enim hendrerit imperdiet. Duis pharetra sollicitudin arcu. Integer commodo lorem eu sem dictum, eu faucibus mauris vehicula. Maecenas a leo ac nunc sollicitudin aliquam id nec nunc. Suspendisse quis lectus scelerisque, dictum elit eget, pulvinar tellus. Ut ultrices imperdiet vehicula. Nam at pretium ligula.</string>
+    <string name="beers_nodata">No hay conexión al servidor ni datos almacenados</string>
+</resources>

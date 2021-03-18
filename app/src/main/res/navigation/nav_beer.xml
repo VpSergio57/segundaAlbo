@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_beer"
+    app:startDestination="@id/beerListFragment">
+
+    <fragment
+        android:id="@+id/beerListFragment"
+        android:name="com.example.segundaalbo.BeerListModule.BeerListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/beer_list_fragment" >
+        <action
+            android:id="@+id/action_beerListFragment_to_beerPageFragment"
+            app:destination="@id/beerPageFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/beerPageFragment"
+        android:name="com.example.segundaalbo.BeerPageModule.BeerPageFragment"
+        >
+        <action
+            android:id="@+id/action_beerPageFragment_to_beerListFragment"
+            app:destination="@id/beerListFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="selected_beer"
+            app:argType="com.example.segundaalbo.common.db.entities.BeerEntity" />
+    </fragment>
+</navigation>
